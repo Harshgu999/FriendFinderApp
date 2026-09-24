@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "42GT4UmzD8c=",
+  "success": true,
+  "projectFilePath": "D:\\DotNetProjectFoder\\FriendFinderApp\\API\\API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\harsh\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.20\\microsoft.aspnetcore.openapi.9.0.20.nupkg.sha512",
+    "C:\\Users\\harsh\\.nuget\\packages\\microsoft.openapi\\1.6.30\\microsoft.openapi.1.6.30.nupkg.sha512"
+  ],
+  "logs": []
+}

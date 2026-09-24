@@ -1,0 +1,35 @@
+# Project Information
+
+## Tech Stack
+- ASP.NET Core 9
+- Entity Framework Core
+- SQL Server
+- Angular 22
+
+## Architecture
+- Clean Architecture
+- Controllers -> Services -> Repositories
+- Dependency Injection throughout the application
+
+## Coding Standards
+- Follow SOLID principles
+- Use meaningful variable names
+- Avoid code duplication
+- Use async/await for database operations
+- Add XML documentation for public methods
+
+## Testing
+- Use xUnit
+- Write unit tests for business logic
+
+## Security
+- Use JWT Authentication
+- Validate all user input
+- Never hardcode connection strings or secrets
+
+## Response Style
+When modifying code:
+1. Explain the change.
+2. Show the affected files.
+3. Keep existing architecture intact.
+4. Suggest improvements separately.
