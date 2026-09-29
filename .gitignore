@@ -7,6 +7,9 @@
 *.db-shm
 *.db-wal
 
+# Local application configuration (may contain connection strings or secrets)
+API/appsettings.json
+
 # Editor settings
 .vscode/
 .vs/
