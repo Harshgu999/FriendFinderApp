@@ -9,6 +9,8 @@
 
 # Local application configuration (may contain connection strings or secrets)
 API/appsettings.json
+API/friendfinder.db
+
 
 # Editor settings
 .vscode/
