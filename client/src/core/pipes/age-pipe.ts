@@ -1,5 +1,4 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { retry } from 'rxjs';
 
 @Pipe({
   name: 'age',
@@ -12,7 +11,7 @@ export class AgePipe implements PipeTransform {
     let age = today.getFullYear() - dob.getFullYear();
     const monthDiff = today.getMonth() - dob.getMonth();
 
-    if(monthDiff > 0 || (monthDiff === 0 && today.getDate() < dob.getDate())){
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
       age--;
     }
 
