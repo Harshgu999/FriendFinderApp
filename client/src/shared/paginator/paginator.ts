@@ -19,6 +19,10 @@ export class Paginator {
     return Math.min(this.pageNumber() * this.pageSize(), this.totalCount())
   })
 
+  firstItemIndex = computed(() => {
+    return this.totalCount() === 0 ? 0 : (this.pageNumber() - 1) * this.pageSize() + 1;
+  })
+
   onPageChange(newPage?: number, pageSize?: EventTarget | null){
     if(newPage) this.pageNumber.set(newPage);
       if(pageSize){
