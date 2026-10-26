@@ -31,14 +31,12 @@ public class Seed
 
             var user = new AppUser
             {
-                Id = member.Id,
                 Email = member.Email,
                 UserName = member.Email,
                 DisplayName = member.DisplayName,
                 ImageUrl = member.ImageUrl,
                 Member = new Member
                 {
-                    Id = member.Id,
                     DisplayName = member.DisplayName,
                     Description = member.Description,
                     DateOfBirth = member.DateOfBirth,
@@ -54,8 +52,7 @@ public class Seed
 
             user.Member.Photos.Add(new Photo
             {
-                Url = member.ImageUrl!,
-                MemberId = member.Id
+                Url = member.ImageUrl!
             });
 
             var result = await userManager.CreateAsync(user, "Pa$$w0rd");
